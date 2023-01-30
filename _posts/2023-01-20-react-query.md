@@ -13,9 +13,9 @@ categories:
 
 - React Query는 리액트에서 서버 상태를 가져오고 패칭, 캐싱하고, 동기화, 업데이트하는 것을 쉽게 해준다 - [공식문서](https://tanstack.com/query/latest/docs/react/overview?from=reactQueryV3&original=https%3A%2F%2Freact-query-v3.tanstack.com%2Foverview)
 
-회사 프로젝트에서 진행했던 API 관련 코드 들은 Redux 와 Redux-saga, Context API를 사용하여 전역 상태에 client, server state의 모든 상태들을 관리 하고 있었다.
+회사 프로젝트에서 진행했던 API 관련 코드 들과 전역 상태 관리는 Redux 와 Redux-saga, Context API를 사용하여 client, server state의 모든 상태들을 관리를 했다.
 
-store라는 것은 내가 생각하기에 전역 상태가 저장되고 관리되는 공간인데, 상태 관리 보단 API 통신 코드들이 많아지는 이슈 아닌 이슈를 만들고 있었다. 만약 프로젝트가 커지고 팁원들과 협업을 계속해서 진행할 경우 코드가 더 비대해 질 수 있고, 나중에는 리펙토링을 진행하기에 코드를 만지기에도 거부감일 들 수가 있다.
+store라는 것은 생각하기에 전역 상태가 저장되고 관리되는 공간인데, 상태 관리 보단 API 통신 코드들이 많아지는 이슈 아닌 이슈를 만들고 있었다. 만약 프로젝트가 커지고 팁원들과 협업을 계속해서 진행할 경우 코드가 더 비대해 질 수 있고, 나중에는 리펙토링을 진행할때 코드를 만지기에도 거부감일 들 수가 있다.
 
 리덕스를 사용하면서 API 요청에 관련한 상태를 관리 하려면
 
@@ -57,7 +57,7 @@ const initialState: IAppointmentState = {
 
 이렇게 된다면 위에서 쓴 이슈에서 전역 상태 관리 store에서 **_client state_** 와 **_server state_**를 나눌수 있는 굉장한 이 점이 있다.
 
-간단한 React Query 예제를 살펴보면서 많이 쓰이는 3가지만 정리해보자
+간단한 React Query 예제를 살펴보면서 많이 쓰이는 **3가지만 정리해보자**
 
 ```ts
 import {
@@ -127,12 +127,9 @@ import {
 ```
 
 <br/>
-<br/>
-<br/>
 
 ---
 
-<br/>
 <br/>
 
 ## 1. **_Queries_**
@@ -193,12 +190,9 @@ const { data } = useQuery(
 ```
 
 <br/>
-<br/>
-<br/>
 
 ---
 
-<br/>
 <br/>
 
 Query(리스트?를)가 여러 개일 땐 어떻게 해야하나 / [공식문서](https://tanstack.com/query/latest/docs/react/guides/parallel-queries?from=reactQueryV3&original=https%3A%2F%2Freact-query-v3.tanstack.com%2Fguides%2Fparallel-queries)
@@ -216,12 +210,9 @@ function App () {
 ```
 
 <br/>
-<br/>
-<br/>
 
 ---
 
-<br/>
 <br/>
 
 ## 2. **_Mutation_**
@@ -272,13 +263,8 @@ const {
 });
 ```
 
-<br/>
-<br/>
-<br/>
+## <br/>
 
----
-
-<br/>
 <br/>
 
 ## 3. **_Query Invalidation_**
@@ -294,13 +280,8 @@ queryClient.invalidateQueries("todos");
 
 - 해당 key를 가진 query는 stale (신선하지 않은) 취급되고,현재 rendering 되고 있는 query들은 백그라운드에서 refetch 가 이루어진다.
 
-<br/>
-<br/>
-<br/>
+## <br/>
 
----
-
-<br/>
 <br/>
 
 ## 4. **_장점 & 고려해야할점_**
@@ -315,8 +296,8 @@ queryClient.invalidateQueries("todos");
 - Devtool 제공으로 원활한 디버깅 - [공식문서](https://react-query.tanstack.com/devtools)
 - Cache 전략 필요할때 아주 좋음 ( 현재 프로덕트에 적합한지는 ? / 예약 승인 , 취소, 대기 등 최신화가 우선 )
 - [Npm Download Trend](https://www.npmtrends.com/react-query-vs-swr-vs-redux-saga) / 트렌드의 기술을 적용해보는 장점
-
-<br/>
+  ![Npm Download Trend](/assets/images/npm-trend.png "trend.img")
+  <br/>
 
 고려해야할점
 
