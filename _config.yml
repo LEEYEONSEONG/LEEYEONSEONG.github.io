@@ -152,7 +152,7 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 : "/assets/images/bio-photo.jpg"
+og_image                 : "/assets/images/profile.png"
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -170,7 +170,7 @@ analytics:
 # Site Author
 author:
   name             : "LEE YEON SEONG"
-  avatar           : "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/profile.png"
   bio              : "No Magic."
   location         : "Deajeon, South Korea"
   email            : "dustjd1535@gmail.com"
