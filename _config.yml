@@ -4,9 +4,9 @@ remote_theme             : "mmistakes/minimal-mistakes"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Site Title"
+title                    : "Yeonsoenglee Blog"
 title_separator          : "-"
-name                     : "Your Name"
+name                     : "LEE YEON SEONG"
 description              : "An amazing website."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -88,11 +88,11 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Moss GU"
+title                    : "Yeonseonglee Blog"
 title_separator          : "-"
-name                     : "Moss GU"
+name                     : "LEE YEON SEONG"
 description              : "Code matters."
-url                      : "https://mossgreen.github.io"
+url                      : "https://LEEYEONSEONG.github.io"
 baseurl                  : #"/blog" the subpath of your site, e.g. "/blog"
 repository               :  "mossgreen/mossgreen.github.io" # GitHub username/repo-name e.g.
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -147,7 +147,7 @@ naver_site_verification  :
 
 # Social Sharing
 twitter:
-  username               : "gufeifei"
+  username               : 
 facebook:
   username               :
   app_id                 :
@@ -169,12 +169,12 @@ analytics:
 
 # Site Author
 author:
-  name             : "Moss GU"
+  name             : "LEE YEON SEONG"
   avatar           : "/assets/images/bio-photo.jpg"
   bio              : "No Magic."
-  location         : "Auckland, New Zealand"
-  email            : "mossgu@outlook.com"
-  uri              : "https://mossgreen.github.io"
+  location         : "Deajeon, South Korea"
+  email            : "dustjd1535@gmail.com"
+  uri              : "https://LEEYEONSEONG.github.io"
   home             : # null (default), "absolute or relative url to link to author home"
   bitbucket        :
   codepen          :
@@ -182,19 +182,19 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "mossgreen"
+  github           : "https://github.com/LEEYEONSEONG"
   gitlab           :
   google_plus      :
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         : "mossgu"
+  linkedin         : 
   pinterest        :
   soundcloud       :
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
   steam            : # "steamId" (the last part of your profile url, e.g. https://steamcommunity.com/id/steamId/)
   tumblr           :
-  twitter          : "gufeifei"
+  twitter          : 
   vine             :
   weibo            :
   xing             :
